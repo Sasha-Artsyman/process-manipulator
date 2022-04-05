@@ -91,9 +91,9 @@ class Program
         {
             theProc = Process.GetProcessById(thisProcessId);
         }
-        catch (ArgumentException ex)
+        catch (ArgumentException ex0)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine(ex0.Message);
             return;
         }
 
@@ -102,9 +102,9 @@ class Program
         {
             theProc.Kill();
         }
-        catch (InvalidOperationException ex)
+        catch (InvalidOperationException ex1)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine(ex1.Message);
         }
     }
 }
